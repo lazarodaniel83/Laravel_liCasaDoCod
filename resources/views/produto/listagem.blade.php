@@ -1,5 +1,5 @@
 
-@extends('principal')
+@extends('layout.principal')
 @section('conteudo')
     @if(empty($produtos))
         <div>Voce não tem nenhum produto cadastrado</div>

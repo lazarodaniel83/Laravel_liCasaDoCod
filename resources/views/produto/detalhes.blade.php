@@ -1,5 +1,5 @@
 
-@extends('principal')
+@extends('layout.principal')
 @section('conteudo')
     <h1>Detalhe do produto: <?=$p->nome ?></h1>
     <ul>

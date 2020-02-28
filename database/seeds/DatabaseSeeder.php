@@ -25,6 +25,6 @@ class ProdutoTableSeeder extends Seeder
        Db::insert('insert into produtos(nome,quantidade,valor,descricao) values(?,?,?,?)',array('Geladeira',2,5900.00,'Side by side com gelo na porta')); 
        Db::insert('insert into produtos(nome,quantidade,valor,descricao) values(?,?,?,?)',array('Fogao',5,950.00,'Painel automatico e ferro eletrico'));
        Db::insert('insert into produtos(nome,quantidade,valor,descricao) values(?,?,?,?)',array('Microondas',1,1520.00,'Manda SMS quando termina de esquentar'));
-
+       
     }
 }    
