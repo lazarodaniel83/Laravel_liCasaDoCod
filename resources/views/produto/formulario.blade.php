@@ -5,6 +5,7 @@
     <h1>Novo produto</h1>
     <form action="/produtos/adiciona" method="post">
     <input type="hidden" name="_token" value="{{{csrf_token()}}}"/>
+       
         <div class="form-group">
             <label>Nome</label>
             <input name="nome" class="form-control">

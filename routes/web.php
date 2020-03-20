@@ -20,9 +20,9 @@ Route::get('/produtos','ProdutoController@lista');
 Route::get('/test-conn', function () {
     // Insere um novo usuário ao banco de dados:
     $user = \App\User::create([
-        'name'         => 'lazaro',
-        'email'     => 'ldss158@gmail.com.br',
-        'password'     => bcrypt(''),
+        'name'         => 'lazaros',
+        'email'     => 'ldxss158@gmail.com.br',
+        'password'     => bcrypt('Ldss1209!'),
     ]);
     // Se quiser exibir os dados do usuário: dd($user);
  
@@ -40,3 +40,8 @@ Route::get('produtos/mostra/{id}','ProdutoController@mostra')->where('id','[0-9]
 Route::get('/produtos/novo','ProdutoController@novo');
 
 Route::post('/produtos/adiciona','ProdutoController@adiciona');
+
+Route::get('/produtos/json','ProdutoController@listaJson');
+Route::get('/produtos/remove/{id}','ProdutoController@remove');
+Route::get('/produtos/altera/{id}','ProdutoController@altera');
+Route::post('/produtos/alterado/{id}','ProdutoController@alterado');
